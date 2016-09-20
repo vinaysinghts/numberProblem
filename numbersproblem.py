@@ -49,45 +49,9 @@ def main():
 		dividends = [(i*10)+j for i,j in zip(temp1,temp2)]
 		dividentsReverse = [(i*10)+j for i,j in zip(temp2,temp1)]
 		divideAndCheckResult(divisers,dividends)
-		# dividedValues = divideList(dividends,divisers)#[x/y for x,y in zip(divisers,dividends)]
-		#print(divisers,"/",dividends,"=",dividedValues)
-		# resultFound = checkResult(dividedValues)
-		# if resultFound == 1:
-			# print("result found!!!!")
-			# print ("sum [",sum(dividedValues),"]")
-			# return 1	
-		# #swap dividends positions
-		# dtemp = dividends
-		# for i in range(len(dtemp) - 1):
-			# dtemp += [dtemp.pop(0)]
-			# dividedValues = divideList(dtemp,divisers)#[x/y for x,y in zip(divisers,dividends)]
-			# #print(divisers,"/",dividends,"=",dividedValues)
-			# resultFound = checkResult(dividedValues)
-			# if resultFound == 1:
-				# print("result found!!!!")
-				# print ("sum [",sum(dividedValues),"]")
-				# return 1	
-
 		#swap digits in dividends
 		divideAndCheckResult(divisers,dividentsReverse)
-		# dividedValues = divideList(dividentsReverse,divisers)#[x/y for x,y in zip(divisers,dividends)]
-		# #print(divisers,"/",dividends,"=",dividedValues)
-		# resultFound = checkResult(dividedValues)
-		# if resultFound == 1:
-			# print("result found!!!!")
-			# print ("sum [",sum(dividedValues),"]")
-			# return 1
-		
-		# dtemp = dividentsReverse
-		# for i in range(len(dtemp) - 1):
-			# dtemp += [dtemp.pop(0)]
-			# dividedValues = divideList(dtemp,divisers)#[x/y for x,y in zip(divisers,dividends)]
-			# print(divisers,"/",dividends,"=",dividedValues)
-			# resultFound = checkResult(dividedValues)
-			# if resultFound == 1:
-				# print("result found!!!!")
-				# print ("sum [",sum(dividedValues),"]")
-				# return 1	
+
 		#reset
 		divisers = []
 		dividends = []

@@ -38,12 +38,9 @@ def main():
 	noResult = 0
 	for numberstemp in numbersPermutations:
 		count = 1
-		for i in numberstemp:
-			divisers += [i]
-			if count == 3:
-				break
-			count += 1
-		restNumbers = list (set(numberstemp).difference(set(divisers)))
+		divisers = numberstemp[0:3]
+		restNumbers = numberstemp[3:]
+		#restNumbers = list (set(numberstemp).difference(set(divisers)))
 		temp1 = restNumbers[0::2]
 		temp2 = restNumbers[1::2]
 		dividends = [(i*10)+j for i,j in zip(temp1,temp2)]
